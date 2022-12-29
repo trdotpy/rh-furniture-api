@@ -22,8 +22,8 @@ router.post("/", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items,
     mode: "payment",
-    success_url: "http://localhost:3000/order-confirmed",
-    cancel_url: "http://localhost:3000/cart",
+    success_url: "https://rh-furniture.onrender.com/order-confirmed",
+    cancel_url: "https://rh-furniture.onrender.com/",
   });
 
   res.redirect(303, session.url);
