@@ -41,5 +41,9 @@ app.use("/categories", categoryRoutes);
 app.use("/checkout", stripeRoute);
 app.use("/create-checkout-session", checkoutRoute);
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
+
 // Start server
 app.listen(port, () => console.log(`Server is listening on port ${port}`));
