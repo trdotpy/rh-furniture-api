@@ -1,8 +1,9 @@
 # R+H Furniture - Ecommerce Store
 
 <img src="./screenshots/desktop-home.png">
+<img src="./screenshots/desktop-hero.png">
 
-#### [Live Demo](https://rh-furniture.onrender.com/) | [Frontend Repo](https://github.com/trdotpy/rh-furniture-client)
+## [LIVE](https://rh-furniture.onrender.com/) | [Server](https://github.com/trdotpy/rh-furniture-api)
 
 # Overview
 
@@ -14,13 +15,13 @@ This application is fully responsive and provides a seamless user experience on 
 
 ### Product Page
 
-<img src="./screenshots/desktop-product.png">
+<img src="./screenshots/desktop-product-page.png">
 
-### Desktop Cart
+### Product Details
 
-<img src="./screenshots/desktop-cart.png">
+<img src="./screenshots/desktop-product-detail.png">
 
-### Stripe Checkout
+### Checkout
 
 <img src="./screenshots/desktop-checkout.png">
 

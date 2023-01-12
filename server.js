@@ -22,7 +22,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Help secure Express apps with various HTTP headers
 app.use(helmet());
 
 // DB connection
@@ -41,7 +40,7 @@ app.use("/categories", categoryRoutes);
 app.use("/checkout", stripeRoute);
 app.use("/create-checkout-session", checkoutRoute);
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
